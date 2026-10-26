@@ -39,7 +39,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t cgpa-calculator .'
+                bat 'bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t cgpa-calculator .'
             }
         }
     }
