@@ -38,10 +38,10 @@ pipeline {
         }
 
         stage('Docker Build') {
-            steps {
-                 bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t cgpa-calculator .'
+          steps {
+          bat '"C:\\Users\\saiki\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t cgpa-calculator .'
             }
-        }
+        }   
     }
 
     post {
