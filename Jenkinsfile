@@ -1,3 +1,4 @@
+```groovy
 pipeline {
     agent any
 
@@ -36,17 +37,24 @@ pipeline {
                 archiveArtifacts artifacts: 'target/cgpa-calculator.jar', fingerprint: true
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                bat 'docker build -t cgpa-calculator .'
+            }
+        }
     }
 
     post {
         success {
-            echo 'CI pipeline completed successfully.'
+            echo 'CI pipeline and Docker image build completed successfully.'
         }
         failure {
-            echo 'CI pipeline failed. Check the Console Output for details.'
+            echo 'Pipeline failed. Check the Console Output for details.'
         }
         always {
             echo 'Pipeline run finished.'
         }
     }
 }
+```
