@@ -40,3 +40,4 @@ The `Jenkinsfile` contains four stages:
 Create a Jenkins Pipeline job named `GitHub-Maven-CI`, select **Pipeline script from SCM**, choose Git, enter the repository URL, set the branch to `*/main`, and use `Jenkinsfile` as the script path.
 
 For GitHub webhooks, Jenkins must be reachable from GitHub over the network. A localhost URL is not directly accessible to GitHub's servers.
+CI/CD pipeline verification
