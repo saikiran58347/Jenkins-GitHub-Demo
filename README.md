@@ -42,3 +42,4 @@ Create a Jenkins Pipeline job named `GitHub-Maven-CI`, select **Pipeline script 
 For GitHub webhooks, Jenkins must be reachable from GitHub over the network. A localhost URL is not directly accessible to GitHub's servers.
 CI/CD pipeline verification
 CI/CD pipeline verification
+H/2 * * * *
