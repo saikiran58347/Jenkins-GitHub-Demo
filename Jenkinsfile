@@ -1,4 +1,3 @@
-```groovy
 pipeline {
     agent any
 
@@ -50,11 +49,10 @@ pipeline {
             echo 'CI pipeline and Docker image build completed successfully.'
         }
         failure {
-            echo 'Pipeline failed. Check the Console Output for details.'
+            echo 'Pipeline failed. Check Console Output for details.'
         }
         always {
             echo 'Pipeline run finished.'
         }
     }
 }
-```
